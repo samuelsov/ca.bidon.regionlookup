@@ -10,6 +10,7 @@ class CRM_RegionLookup_BAO_RegionLookup {
    */
   static function getFields() {
     return array(
+      'id' => ts('Unique Identifier'),
       'source' => ts('Field selector'),
       'district' => ts('District'),
       'borough' => ts('Borough'),
@@ -18,8 +19,8 @@ class CRM_RegionLookup_BAO_RegionLookup {
       'state' => ts('State/Province'),
       'country' => ts('Country'),
       'postcode' => ts('Postcode'),
-      'stateriding' => ts('State/Province riding'),
-      'countryriding' => ts('Country riding'),
+      'state_riding' => ts('State/Province riding'),
+      'country_riding' => ts('Country riding'),
       'callback' => ts('Custom callback'),
     );
   }
